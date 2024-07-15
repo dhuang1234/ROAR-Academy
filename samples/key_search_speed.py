@@ -18,10 +18,10 @@ print('Reading I/O file ... ', end = ' ')
 try:
     # Get the script path
 
-    path = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.dirname(os.path.abspath(__file__))   
 
     # Open the file for read
-    f_handle = open(path+'/'+file_name,"r")
+    f_handle = open(path+'/'+file_name,"r")  # "/../ goes back a folder if your folder is in a different path like one folder down"
     f_handle.readline()   # The first line is table captions
     # Create three dictionaries of different lengths
     count = 0
