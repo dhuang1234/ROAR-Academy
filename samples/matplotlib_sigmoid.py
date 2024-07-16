@@ -14,7 +14,7 @@ x = np.arange(-10., 10., 0.2)
 sig = sigmoid(x)
 
 fig = plt.figure()
-ax1 = fig.add_subplot(1, 3, 1)
+ax1 = fig.add_subplot(1, 3, 1) # array of one row and three coloumns, ax1 plot is the first element in this array
 # Plot without customization
 plt.plot(x,sig, linewidth = 3)
 

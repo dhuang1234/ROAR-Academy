@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import LassoSelector, Cursor
 
 fig1 = plt.figure(0)           # Create Figure 0
-ax1 = plt.gca()               # Get Current Axes function
+ax1 = plt.gca()               # Get Current Axes function: GCA
 ax1.set_xlim([-10, 0])
 ax1.set_ylim([-10, 10])
 

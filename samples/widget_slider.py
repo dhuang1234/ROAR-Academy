@@ -31,8 +31,8 @@ def update(val):
     l.set_ydata(amp*np.sin(2*np.pi*freq*t))
     fig.canvas.draw_idle()
 
-sfreq.on_changed(update)
-samp.on_changed(update)
+sfreq.on_changed(update) # parameter update is the function name, you can pass a function name into another function
+samp.on_changed(update) # event of on_change is captured by this method and then the os updates the graph
 
 # Create a radio button
 rax = plt.axes([0.025, 0.5, 0.15, 0.15], facecolor=axcolor)
