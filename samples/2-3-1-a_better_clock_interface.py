@@ -6,6 +6,7 @@ import numpy as np
 # remove the axes
 # make the minute and hour hands update
 # make a yellow colored GMT hand
+#DONE
 
 # Initialization, define some constant
 path = os.path.dirname(os.path.abspath(__file__))
@@ -28,11 +29,12 @@ def GMT_hand_vector(angle, length):
 
 # draw an image background, remove the axes
 fig, ax = plt.subplots()
-ax.spines['right'].set_color('none')
-ax.spines['top'].set_color('none')
+
+
 
 while True:
     plt.imshow(background)
+    plt.axis('off') 
 
     # First retrieve the time
     now_time = datetime.now() #time right now, not like time.time() which is time from 1970
