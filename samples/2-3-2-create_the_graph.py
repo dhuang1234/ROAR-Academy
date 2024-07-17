@@ -21,7 +21,7 @@ plt.xlim(1.0, 3.0)
 plt.ylim(1.0, 4.0)
 plt.xlabel("x-axis")
 plt.ylabel("y-axis")
-plt.title("sample graph!")
+plt.title("Sample graph!")
 plt.xticks(np.arange(1., 3.5, 0.5))
 plt.yticks(np.arange(1., 4.5, 0.5))
 
